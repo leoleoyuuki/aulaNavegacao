@@ -1,10 +1,11 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Home from '../screens/Home';
 import Login from '../screens/Login';
 
-const {Screen, Navigator} = createNativeStackNavigator();
 
-export default function StackRoutes(){
+const {Screen, Navigator} = createBottomTabNavigator();
+
+export default function TabRoutes(){
     return(
         <Navigator
         screenOptions={{
