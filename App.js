@@ -1,22 +1,22 @@
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
-import Home from "./src/screens/Home";
-import { Routes } from "./src/routes";
-import StackRoutes from "./src/routes/stack.routes";
+import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { Routes } from './src/routes';
 
 export default function App() {
-
   return (
+    <>
     <SafeAreaView>
-      <Routes/>
+      <Text>Open up App.js to start working on your app!</Text>
     </SafeAreaView>
+    <Routes/>
+  </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

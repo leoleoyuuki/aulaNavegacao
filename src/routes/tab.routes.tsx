@@ -1,27 +1,22 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import Home from '../screens/Home';
 import Login from '../screens/Login';
 
-
 const {Screen, Navigator} = createBottomTabNavigator();
 
-export default function TabRoutes(){
+export default function StackRoutes(){
     return(
-        <Navigator
-        screenOptions={{
-            headerStyle: {backgroundColor: 'blue'}
-        }}
-        >
+        <Navigator>
             <Screen
-                name='Home'
+                name='(Home)'
                 component={Home}
                 options={{
-                    title: 'Tela Inicial',
-                    headerShown: false
+                    title:'Tela de Inicio',
+                    headerShown:false
                 }}
             />
             <Screen
-                name='Login'
+                name='(Login)'
                 component={Login}
             />
         </Navigator>

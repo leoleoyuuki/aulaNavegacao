@@ -1,12 +1,11 @@
 import { Text, View } from "react-native";
+import React from "react";
 
-export default ()=>{
+export default () => {
 
-    return(
+    return (
         <View>
-            <Text>
-                TELA LOGIN
-            </Text>
+            <Text>TELA LOGIN</Text>
         </View>
     )
 

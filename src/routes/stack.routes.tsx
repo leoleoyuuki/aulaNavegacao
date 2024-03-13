@@ -6,21 +6,17 @@ const {Screen, Navigator} = createNativeStackNavigator();
 
 export default function StackRoutes(){
     return(
-        <Navigator
-        screenOptions={{
-            headerStyle: {backgroundColor: 'blue'}
-        }}
-        >
+        <Navigator>
             <Screen
-                name='Home'
+                name='(Home)'
                 component={Home}
                 options={{
-                    title: 'Tela Inicial',
-                    headerShown: false
+                    title:'Tela de Inicio',
+                    headerShown:false
                 }}
             />
             <Screen
-                name='Login'
+                name='(Login)'
                 component={Login}
             />
         </Navigator>

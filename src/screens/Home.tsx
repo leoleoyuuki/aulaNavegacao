@@ -1,15 +1,16 @@
 import { Button, Text, View } from "react-native";
+import React from "react";
 
 export default ({navigation})=>{
 
     function irLogin(){
-        navigation.navigate('Login')
+        navigation.navigate('(Login)')
     }
 
     return(
         <View>
             <Text>TELA HOME</Text>
-            <Button onPress={irLogin} title="IR PARA LOGIN" />
+            <Button title="IR PARA LOGIN" onPress={irLogin} />
         </View>
     )
 
