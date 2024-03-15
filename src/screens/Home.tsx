@@ -10,7 +10,7 @@ export default ({navigation})=>{
     return(
         <View>
             <Text>TELA HOME</Text>
-            <Button title="IR PARA LOGIN" onPress={irLogin} />
+            
         </View>
     )
 
